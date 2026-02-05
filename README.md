@@ -7,16 +7,15 @@
 A classic, robust Todo application built with **Angular 20**. This project demonstrates modern Angular architecture, utilizing **Signals** for state management, **Standalone Components**, and a responsive layout that adapts between mobile and desktop views.
 
 <div align="center">
-
-  <a href="#">
-    <img src="https://img.shields.io/badge/View_Live_Demo-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Preview" />
+  <a href="https://angular-todo-list-rosy.vercel.app/">
+    <img src="https://img.shields.io/badge/Live_Preview-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Preview on Vercel" />
   </a>
-
 </div>
 
 ## Preview
 
-![Desktop Preview](./screenshot.png)
+![Desktop Light Preview](./src/assets/images/desktop-light-preview.png)
+![Desktop Dark Preview](./src/assets/images/desktop-dark-preview.png)
 
 ## Key Features
 
