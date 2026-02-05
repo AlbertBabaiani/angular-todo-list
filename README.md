@@ -10,6 +10,9 @@ A classic, robust Todo application built with **Angular 20**. This project demon
   <a href="https://angular-todo-list-rosy.vercel.app/">
     <img src="https://img.shields.io/badge/Live_Preview-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Preview on Vercel" />
   </a>
+
+[![Design File](https://img.shields.io/badge/Design_File-Figma-black?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/file/b7FVr6rdP41bximGXp0U3r/todo-app)
+
 </div>
 
 ## Preview
