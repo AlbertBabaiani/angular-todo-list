@@ -1,0 +1,7 @@
+<form (ngSubmit)="addTodo()">
+  <button type="button" class="checkbox" (click)="toggleCompleted()" [class.checked]="completed()">
+    <img src="assets/images/icon-check.svg" alt="Check Icon" />
+  </button>
+
+  <input type="text" [(ngModel)]="task" placeholder="Create a new todo..." name="new-todo" />
+</form>

@@ -1,0 +1,49 @@
+.todo {
+  padding-inline: 2rem;
+  height: var(--box-height);
+
+  background: var(--box-color);
+  width: 100%;
+
+  display: grid;
+  align-items: center;
+
+  gap: 1.2rem;
+
+  grid-template-columns: auto 1fr auto;
+
+  border-bottom: 1px solid var(--gray);
+}
+
+.delete-btn {
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+}
+
+p {
+  font-size: var(--font-size);
+  letter-spacing: -0.17px;
+  color: var(--text-color);
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+
+  cursor: pointer;
+
+  &.checked {
+    color: var(--text-checked-color);
+    text-decoration: line-through;
+  }
+}
+
+.delete-btn {
+  width: 1.2rem;
+  height: 1.2rem;
+
+  img {
+    width: 100%;
+  }
+}

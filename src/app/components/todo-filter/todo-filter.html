@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <button type="button" [class.active]="'all' === filter()" (click)="changeFilter('all')">
+    All
+  </button>
+  <button type="button" [class.active]="'active' === filter()" (click)="changeFilter('active')">
+    Active
+  </button>
+  <button
+    type="button"
+    [class.active]="'completed' === filter()"
+    (click)="changeFilter('completed')"
+  >
+    Completed
+  </button>
+</div>

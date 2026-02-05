@@ -1,0 +1,30 @@
+:host {
+  position: relative;
+  background-color: var(--box-color);
+}
+
+input {
+  width: 100%;
+  height: var(--box-height);
+  border: none;
+  border-radius: var(--radius);
+
+  outline: unset;
+
+  padding-inline: 5.2rem 2rem;
+
+  background-color: var(--box-color);
+
+  font-size: var(--font-size);
+  letter-spacing: -0.17px;
+  color: var(--text-secondary-color);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+button {
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+
+  transform: translateY(-50%);
+}

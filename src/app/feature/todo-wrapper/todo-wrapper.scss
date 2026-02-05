@@ -1,0 +1,44 @@
+header {
+  margin-top: 4.8rem;
+  margin-bottom: 4rem;
+
+  @media (min-width: 600px) {
+    margin-top: 7rem;
+    margin-bottom: 4.8rem;
+  }
+}
+
+.main-content {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.input {
+  margin-bottom: 1.6rem;
+
+  @media (min-width: 600px) {
+    margin-bottom: 2.4rem;
+  }
+}
+
+footer,
+.input {
+  margin-top: 1.6rem;
+
+  @media (min-width: 600px) {
+    margin-top: 2.4rem;
+  }
+}
+
+@media (min-width: 600px) {
+  header,
+  main {
+    max-width: 54rem;
+    margin-inline: auto;
+  }
+
+  footer {
+    display: none;
+  }
+}

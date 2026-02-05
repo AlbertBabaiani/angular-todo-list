@@ -1,0 +1,7 @@
+<ul>
+  @for (todo of todos(); track todo.id) {
+    <li>
+      <app-todo-item [todo]="todo" (check)="check.emit(todo.id)" (delete)="delete.emit(todo.id)" />
+    </li>
+  }
+</ul>

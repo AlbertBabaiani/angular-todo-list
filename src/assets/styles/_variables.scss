@@ -1,0 +1,63 @@
+:root {
+  --body-bg-color: #fafafa;
+
+  --text-color: #494c6b;
+  --text-secondary-color: #9495a5;
+  --text-checked-color: #d1d2da;
+
+  --font-size: 1.2rem;
+
+  --white: #fff;
+  --gray: #e3e4f1;
+  --blue: #3a7cfd;
+
+  --shadow: 0 35px 50px -15px rgba(194, 195, 214, 0.5);
+  --radius: 0.5rem;
+
+  --box-color: #fff;
+  --box-height: 4.8rem;
+
+  @media (min-width: 600px) {
+    --font-size: 1.8rem;
+    --box-height: 6.4rem;
+  }
+}
+
+.dark {
+  --body-bg-color: #171823;
+
+  --text-color: #c8cbe7;
+  --text-checked-color: #4d5067;
+
+  --gray: #393a4b;
+
+  --box-color: #25273d;
+
+  --shadow: 0 35px 50px -15px rgba(0, 0, 0, 0.5);
+}
+
+.checkbox {
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100vmax;
+
+  border: 1px solid var(--gray);
+  background: var(--box-color);
+
+  img {
+    display: none;
+  }
+
+  &.checked {
+    border: unset;
+    background-image: linear-gradient(135deg, #5df, #c058f3);
+
+    img {
+      display: inline;
+    }
+  }
+}

@@ -1,6 +1,42 @@
-# AngularTodoList
+# Todo App (Angular 20 + Signals)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.5.
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink?style=for-the-badge&logo=sass&logoColor=white)
+
+A classic, robust Todo application built with **Angular 20**. This project demonstrates modern Angular architecture, utilizing **Signals** for state management, **Standalone Components**, and a responsive layout that adapts between mobile and desktop views.
+
+<div align="center">
+
+  <a href="#">
+    <img src="https://img.shields.io/badge/View_Live_Demo-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Preview" />
+  </a>
+
+</div>
+
+## Preview
+
+![Desktop Preview](./screenshot.png)
+
+## Key Features
+
+- **🌗 Dark & Light Mode:** Automatically detects system preference on first load and persists user selection.
+- **💾 Local Storage Persistence:** Tasks are saved instantly. Your list is waiting for you even if you refresh or close the browser.
+- **⚡ Angular Signals:** State management is handled purely with Signals (`signal`, `computed`, `effect`) for granular reactivity and high performance.
+- **📱 Fully Responsive:**
+  - **Desktop:** Filters appear inside the card footer.
+  - **Mobile:** Filters adapt to a separate floating container for easier touch access.
+- **🔍 Filtering:** Filter tasks by "All", "Active", or "Completed".
+- **🔢 Smart Counter:** Dynamic "Items Left" counter that tracks active tasks regardless of the current view.
+
+## 🛠️ Tech Stack & Architecture
+
+This project strictly follows the **Smart vs. Dumb Component** architecture pattern to ensure maintainability and scalability.
+
+- **Framework:** Angular 19/20 (Standalone Components)
+- **Language:** TypeScript
+- **Styling:** SCSS (with CSS Variables for theming)
+- **State Management:** `TodoService` (Signal-based store)
 
 ## Development server
 
@@ -53,7 +89,3 @@ ng e2e
 ```
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

@@ -1,0 +1,13 @@
+<div class="wrapper">
+  <picture>
+    <source
+      media="(min-width: 600px)"
+      [srcset]="'assets/images/bg-desktop-' + (is_dark() ? 'dark' : 'light') + '.jpg'"
+    />
+
+    <img
+      [src]="'assets/images/bg-mobile-' + (is_dark() ? 'dark' : 'light') + '.jpg'"
+      alt="Background Image"
+    />
+  </picture>
+</div>

@@ -1,0 +1,11 @@
+<div class="todo">
+  <button type="button" class="checkbox" [class.checked]="todo().completed" (click)="check.emit()">
+    <img src="assets/images/icon-check.svg" alt="Check Icon" />
+  </button>
+
+  <p [class.checked]="todo().completed" (click)="check.emit()">{{ todo().task }}</p>
+
+  <button type="button" class="delete-btn" (click)="delete.emit()">
+    <img src="assets/images/icon-cross.svg" alt="Cross Icon" />
+  </button>
+</div>

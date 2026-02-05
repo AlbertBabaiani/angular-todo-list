@@ -1,0 +1,11 @@
+<div class="wrapper">
+  <span>{{ quantity() }}</span>
+
+  <div class="content">
+    <ng-content />
+  </div>
+
+  <div class="btn-wrapper">
+    <button type="button" (click)="clear.emit()">Clear Completed</button>
+  </div>
+</div>

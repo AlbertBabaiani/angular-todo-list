@@ -1,0 +1,27 @@
+<header>
+  <app-header [is_dark_theme]="is_dark_theme()" (new_theme)="changeTheme($event)" />
+</header>
+
+<main>
+  <div class="input">
+    <app-input (todoInput)="addTodo($event)" />
+  </div>
+
+  <div class="main-content">
+    <app-todo-list [todos]="todos()" (check)="toggleCheck($event)" (delete)="deleteTodo($event)" />
+
+    @if (todos().length > 0) {
+      <app-todo-footer [quantity]="items_left_quantity()" (clear)="clearCompleted()">
+        <app-todo-filter [filter]="filter()" (change_filter)="changeFilter($event)" />
+      </app-todo-footer>
+    }
+  </div>
+</main>
+
+@if (todos().length > 0) {
+  <footer>
+    <app-todo-filter [filter]="filter()" (change_filter)="changeFilter($event)" />
+  </footer>
+}
+
+<app-bg-image [is_dark]="is_dark_theme()" />
